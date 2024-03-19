@@ -14,7 +14,7 @@ Returns a list of recipes for a specific query
 
 
 ```https://www.themealdb.com/
-  Path: https://www.themealdb.com/
+ https://www.themealdb.com/
 
 ```
 
