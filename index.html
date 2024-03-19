@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Yummy 🍕 ‧₊°⋅</title>
+  </head>
+  <body>
+    <div id="load">
+      <span class="loader"></span>
+    </div>
+    <div class="navMenu vh-100 position-fixed d-flex top-0">
+      <div
+        class="nav-tab d-flex flex-column justify-content-between vh-100 py-4"
+      >
+        <div class="links">
+          <ul>
+            <li onclick="displayHome()" class="py-2 position-relative">Home</li>
+            <li onclick="displaySearch()" class="py-2 position-relative">
+              Search
+            </li>
+            <li onclick="getCategories()" class="py-2 position-relative">
+              Categories
+            </li>
+            <li onclick="getArea()" class="py-2 position-relative">Area</li>
+            <li onclick="getIngredients()" class="py-2 position-relative">
+              Ingredients
+            </li>
+            <li onclick="displayContacts()" class="py-2 position-relative">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="footer p-4">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footerText">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+      >
+        <img class="logo" src="img/logo.png" width="50px" alt="logo" />
+        <div class="openIcon">
+          <input type="checkbox" id="menu" />
+          <label for="menu" class="icon">
+            <div class="menu"></div>
+          </label>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block py-3"></i>
+          <i class="fa-solid fa-share-nodes"> </i>
+        </div>
+      </div>
+    </div>
+    <div class="container py-3" id="changePage"></div>
+    <div id="loader" class="top-0 start-0 end-0 bottom-0">
+      <div class="spinner"></div>
+    </div>
+    <div class="container py-3 selects drop-in">
+      <div class="row g-4 py" id="row"></div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="java.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
